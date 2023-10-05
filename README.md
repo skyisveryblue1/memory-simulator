@@ -55,18 +55,6 @@ The page loads will be in "lazy" way, (demand paging).2. Note that on text pages
 
 # files
 - main.cpp : has Main function
-    int main()
-    {
-        char val;
-        sim_mem mem_sm("abc.exe", "swap_file", 16, 16, 32, 32, 16, 8);
-        mem_sm.store(98, 'X');
-        val = mem_sm.load(8);
-        mem_sm.print_memory();
-        mem_sm.print_swap();
-
-        return 0;
-    }
-
 - sim_mem.h :  Definition of sim_mem class
 - sim_mem.cpp : Declaration of sim_mem class
 - README.md : me
